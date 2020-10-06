@@ -1,0 +1,319 @@
+@media(max-width: 1399px){
+
+
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 50px;
+}
+
+
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 55px;
+
+}
+
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption .btn-custom {
+    
+    font-size: 16px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    font-size: 18px !important;
+}
+
+.heading {
+    padding-bottom: 50px;
+}
+
+p{
+	font-size: 16px;
+}
+
+.aboutme-section .aboutme-content {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    
+}
+
+.progress {
+    
+    height: 12px;
+}
+
+.aboutme-section .aboutme-content ul {
+    padding-top: 8px;
+}
+
+.heading h1 {
+
+    font-size: 35px;
+}
+
+.aboutme-content .heading{
+	padding-bottom: 30px;
+}
+
+section{
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+}
+
+.service-section .service h2 {
+    font-size: 20px;
+    margin: 20px 0;  
+}
+
+.service-section .service {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.service-section .service p {
+    font-size: 16px;
+}
+
+.statistic-section .statistic h3 {
+    font-size: 35px;  
+}
+.statistic-section .statistic h2 { 
+    font-size: 22px;
+}
+
+.statistic-section .statistic i {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mywork-section .heading{
+	padding-bottom: 30px;
+}
+
+.mywork-section ul {
+    margin-bottom: 30px;
+}
+
+.story-section {
+    padding-top: 30px !important;
+    padding-bottom: 100px !important;
+}
+.lifestory-section .lifestory-content {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.lifestory-section .lifestory-content .heading {
+
+    padding-bottom: 30px;
+}
+.client-feedback-section {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+}
+}
+
+
+@media(max-width: 1199px){
+
+	nav .navbar-nav .nav-item {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+nav .navbar-nav .nav-item .nav-link {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+   
+}
+.navbar-expand-lg .navbar-collapse {
+        padding-right: 30px;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 45px;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 40px;
+}
+.carousel-item img{
+	height: 550px;
+	object-fit: cover;
+}
+.aboutme-section .row{
+	align-items: center;
+}
+.story-section .story .story-content h5 {
+    font-size: 14px;
+}
+.story-section .story .story-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.story-section .story .story-content p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.story-section .story .row, .lifestory-section .row{
+	align-items: center;
+}
+.tweet-section p {
+    max-width: 650px;
+    font-size: 18px;
+    margin: auto;
+}
+.tweet-section{
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
+}
+.getintouch-section form .btn-custom {
+    width: 170px;
+    font-size: 20px;
+  
+}
+footer p {
+    
+    font-size: 16px;
+}
+}
+
+@media(max-width: 991px){
+	.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 2rem;
+    
+    
+}
+nav .dropdown{
+	display: none;
+}
+.navbar{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 35px;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 30px;
+    font-weight: 600;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption .btn-custom {
+    font-size: 15px;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+.carousel-item img{
+	height: 400px !important;
+}
+.aboutme-img{
+	margin-top: 50px;
+}
+.service-section .service h2 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.service-section .service p {
+    font-size: 14px;
+}
+.service-section .service {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.statistic-section .statistic i {
+   
+    width: 80px;
+    height: 80px;
+    line-height: 80px;  
+}
+.statistic-section .statistic h3 {
+    font-size: 32px;
+}
+.statistic-section .statistic h2 {
+    font-size: 19px;
+    font-weight: 500;
+}
+.mywork-section ul li button {
+    font-size: 16px;
+ 	padding: 10px 15px;
+    
+}
+.mywork-section .work a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;   
+}
+.mywork-section .work div {
+       padding-top: 12px;
+}
+.mywork-section .work div h5 {
+    
+    font-size: 14px;
+}
+
+.mywork-section .work:hover div {
+    height: 70px;
+}
+.mywork-section .work div p {
+    
+    font-size: 12px;
+}
+.lifestory-section .lifestory-content .heading {
+    text-align: center;
+}
+
+.lifestory-section .lifestory-content .heading .line {
+    margin: 0 auto;
+    max-width: 500px;
+   
+}
+.lifestory-section .lifestory-img {
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.client-feedback{
+	margin-bottom: 40px;
+}
+
+}
+
+@media(max-width: 767px){
+
+nav .navbar-nav .nav-item {
+    padding-left: 5px !important;
+    padding-right: 7px !important;
+}
+
+}
+
+@media(max-width: 575px){
+.navbar-nav {
+    flex-direction: column;
+    align-items: center;
+}
+nav .navbar-nav .nav-item .nav-link {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption { 
+    text-align: center; 
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 25px;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 20px;
+}
+.slider-section .carousel .carousel-inner .carousel-item .carousel-caption .btn-custom {
+    font-size: 14px;
+    
+}
+}
+

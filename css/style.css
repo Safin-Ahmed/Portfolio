@@ -1,6 +1,10 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 .social-list li a {
   border: 1px solid #ebebeb; }
+  *{
+  scroll-behavior: smooth;
+}
 
 @keyframes lineMove {
   0% {
@@ -31,8 +35,11 @@
 @keyframes progress {
   from {
     width: 0%; } }
+
+
 body {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+   }
 
 header {
   position: relative; }
@@ -54,7 +61,7 @@ nav {
   nav .navbar-nav .nav-item {
     padding-left: 15px !important;
     padding-right: 15px !important; }
-    nav .navbar-nav .nav-item .nav-link {
+    nav .navbar-nav .nav-item .nav-link{
       color: #cccccc !important;
       font-size: 20px !important;
       font-weight: 600;
@@ -63,7 +70,7 @@ nav {
       padding-left: 0 !important;
       padding-right: 0 !important;
       position: relative; }
-      nav .navbar-nav .nav-item .nav-link::after {
+      nav .navbar-nav .nav-item .nav-link::after, .navbar-dark .navbar-nav .nav-link.active::after{
         content: "";
         position: absolute;
         width: 100%;
@@ -75,9 +82,9 @@ nav {
         -webkit-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out; }
-      nav .navbar-nav .nav-item .nav-link:hover {
+      nav .navbar-nav .nav-item .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active{
         color: #f39c12 !important; }
-        nav .navbar-nav .nav-item .nav-link:hover::after {
+        nav .navbar-nav .nav-item .nav-link:hover::after, .navbar-dark .navbar-nav .nav-link.active::after{
           transform: scaleX(1); }
 
 /*************** Search ***************/
@@ -535,7 +542,7 @@ p {
       color: #c7c7c7;
       font-size: 18px;
       font-weight: 500;
-      width: 665px;
+     /* width: 665px;*/
       margin-bottom: 30px;
       line-height: 1.5; }
 
@@ -627,7 +634,7 @@ p {
 .getintouch-section .heading {
   padding-bottom: 60px; }
 .getintouch-section p {
-  width: 1010px;
+  /*width: 1010px;*/
   margin: auto;
   font-size: 20px;
   font-weight: 500;
@@ -702,3 +709,157 @@ footer {
       color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
+
+.navbar-toggler{
+  padding: .25rem .25rem;
+  border-color: rgb(255 255 255) !important;
+  border-radius: 0;
+}
+
+.navbar-toggler span {
+    width: 35px;
+    height: 3px;
+    display: block;
+    background: #fff;
+    margin: 5px 0;
+    transition: all 0.5s ease;
+}
+.navbar-toggler span:last-child{}
+.navbar-toggler span:first-child{}
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 0;
+}
+
+.navbar-toggler:hover{
+
+  border-color: rgba(255,255,255,0) !important;
+
+}
+.navbar-toggler:hover span:first-child {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.navbar-toggler:hover span:last-child {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+
+
+
+/* Fakeloader */
+#fakeloader-overlay {
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-color: rgb(58 58 58 / 98%);
+  height: 100%;
+  width: 100%;
+  z-index: 9998;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear; 
+}
+
+#fakeloader-overlay.visible {
+  opacity: 1; 
+}
+
+#fakeloader-overlay.hidden {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+  z-index: -10000; 
+}
+
+#fakeloader-overlay .loader-wrapper-outer {
+  background-color: transparent;
+  z-index: 9999;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: table;
+  text-align: center;
+  vertical-align: middle; 
+}
+
+#fakeloader-overlay .loader-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle; 
+}
+
+#fakeloader-overlay .loader {
+  margin: auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 8px solid rgb(243 156 18);
+  border-right: 8px solid rgb(42 46 50);
+  border-bottom: 8px solid rgb(255 255 255);
+  border-left: 8px solid #9c9363;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fakeloader 1.1s infinite linear;
+  animation: fakeloader 1.1s infinite linear; 
+}
+#fakeloader-overlay .loader::after{
+    content: "";
+    box-shadow: 0 0 0 8px #f39c12f2;
+    filter: blur(10px);
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+#fakeloader-overlay .loader::before{
+      content: "";
+    box-shadow: 0 0 0 10px #ffbe05;
+    filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+
+#fakeloader-overlay .loader, #fakeloader-overlay .loader:after {
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; 
+}
+
+@-webkit-keyframes fakeloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); 
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+  } 
+}
+
+@keyframes fakeloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); 
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); 
+  } 
+}
+
+/* Fakeloader */
